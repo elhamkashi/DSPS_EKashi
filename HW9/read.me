@@ -1,0 +1,60 @@
+I chose the in-class-clusteringGenes scattering matrix plot, as I remembered the caption of the plot: It's a mess! the data is too high dimensional for a regular visualization!
+
+
+Original Plot:
+
+A pd.plotting.scatter_matrix displaying all pairwise relationships among 84 gene features.
+While comprehensive, it produced thousands of small, redundant plots that were impossible to interpret.
+
+Final Plots:
+
+Two complementary correlation visualizations:
+
+1-Clustered correlation heatmap with hierarchical dendrograms.
+
+2-Masked correlation heatmap showing only the lower triangle to remove duplication.
+
+Changes Made and Why:
+
+1. Replaced Scatterplot Matrix with Correlation Heatmaps
+
+Problem: The scatterplot matrix generated 3,486 subplots, each too small to show meaningful trends.
+
+Solution: Heatmaps encode correlation strength and direction through color, allowing relationships to be seen at a glance.
+
+Tufte Principle: Show data variation, not design variation.
+
+2-Removed Redundancy
+
+Problem: Each pairwise comparison appeared twice (above and below the diagonal).
+
+Solution: The masked heatmap hides the upper triangle, eliminating duplicate information.
+
+Tufte Principle: Avoid redundancy in communication.
+
+3. Introduced Hierarchical Clustering
+
+Problem: The alphabetical gene order obscured biological patterns.
+
+Solution: Clustering groups similar genes together, revealing natural co-expression structures.
+
+Tufte Principle: Use informative orderings and small multiples effectively.
+
+4. Improved Data–Ink Ratio
+
+Problem: The scatterplot matrix wasted visual space on axes, grids, and repeated frames.
+
+Solution: Heatmaps focus visual ink on meaningful data, with a single unified color scale.
+
+Tufte Principle: Maximize the data–ink ratio.
+
+5. Reduced Label Clutter
+
+Problem: Overlapping gene names made the original plot unreadable.
+
+Solution: Simplified labels and focused on global correlation patterns rather than individual feature names.
+
+Tufte Principle: Eliminate chart junk to clarify meaning.
+
+
+
