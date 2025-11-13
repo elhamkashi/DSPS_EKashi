@@ -5,14 +5,17 @@ Original Plot:
 
 A pd.plotting.scatter_matrix displaying all pairwise relationships among 84 gene features.
 While comprehensive, it produced thousands of small, redundant plots that were impossible to interpret.
+![Original scatterplot matrix showing gene expression data](https://github.com/elhamkashi/DSPS_EKashi/raw/main/HW9/original%20bad%20plot.png)
+
 
 Final Plots:
 
 Two complementary correlation visualizations:
 
 1-Clustered correlation heatmap with hierarchical dendrograms.
-
+![Clustered correlation heatmap of gene expressions](https://github.com/elhamkashi/DSPS_EKashi/raw/main/HW9/Clustered%20correlation%20matrix.png)
 2-Masked correlation heatmap showing only the lower triangle to remove duplication.
+![Masked correlation heatmap eliminating redundancy](https://github.com/elhamkashi/DSPS_EKashi/raw/main/HW9/Masked%20correlation%20matrix.png)
 
 Changes Made and Why:
 
