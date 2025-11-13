@@ -1,4 +1,4 @@
-![Description of the original bad scatterplot matrix](https://github.com/elhamkashi/DSPS_EKashi/raw/main/HW9/alp-bad.png)
+![Description](https://github.com/elhamkashi/DSPS_EKashi/raw/main/HW9/alp-bad.png)
 
 This figure shows current experimental limits (solid lines), 
 future projections (dashed lines), and theoretical regions for axions and axion-like particles
@@ -11,3 +11,7 @@ draws attention away from the main message. Its data-to-ink ratio is low, with m
 to design elements rather than new information. Several Tufte principles are violated, especially no-chart-junk and data/ink >> 1,
  A clearer presentation could use simplified color schemes, consistent labeling, and multiple smaller panels (for current limits, projections, and theoretical regions separately).
  Overall, while the figure is data-rich, its visual complexity reduces interpretability and hides the most important insights.
+How to make it better: Splitting the information into multiple simpler plots (e.g., current vs. projected experiments) and use consistent, non-overlapping color coding. Reduce redundant labels and gradients so the viewer can clearly identify experimental sensitivities and theoretical regions without needing to rely on the caption. 
+
+The following is a good plot showing the same data: 
+![Description](https://github.com/elhamkashi/DSPS_EKashi/raw/main/HW9/axionphoton-good.png)
