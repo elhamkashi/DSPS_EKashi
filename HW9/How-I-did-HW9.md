@@ -5,37 +5,5 @@ Task2: Post the good and bad visualizations that you found in the literature, I 
 
 
 
-I tried to make two folder for the two task, but I failed! so following shows the map of these tasks
-
-DSPS_EKashi/
-└── HW9/
-    ├── Task1/
-    │   ├── Clustered correlation matrix.png
-    │   ├── Masked correlation matrix.png
-    │   ├── clusteringGenes_visualization_improvement.ipynb
-    │   ├── original bad plot.png
-    │   └── readme-clustringgenes.md
-    ├── Task2/
-    │   ├── alp-bad.png
-    │   ├── axionphoton-good.png
-    │   ├── darkmatter-bad.png
-    │   └── readme-slack.md
-    └── How-I-did-HW9.md  (main project README)
 
 
-DSPS_EKashi/
-└── HW9/
-    ├── Task1/
-    │   ├── Clustered_correlation_matrix.png
-    │   ├── Masked_correlation_matrix.png
-    │   ├── clusteringGenes_visualization_improvement.ipynb
-    │   ├── original_bad_plot.png
-    │   └── readme-clustringgenes.md
-    │
-    ├── Task2/
-    │   ├── alp-bad.png
-    │   ├── axionphoton-good.png
-    │   ├── darkmatter-bad.png
-    │   └── readme-slack.md
-    │
-    └── How-I-did-HW9.md   (main project README)
