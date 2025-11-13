@@ -1,5 +1,4 @@
-
-![Description of your heatmap](images/alp-bad.png)
+![Description of the original bad scatterplot matrix](https://github.com/elhamkashi/DSPS_EKashi/raw/main/HW9/alp-bad.png)
 
 This figure shows current experimental limits (solid lines), 
 future projections (dashed lines), and theoretical regions for axions and axion-like particles
