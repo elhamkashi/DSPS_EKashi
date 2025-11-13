@@ -1,5 +1,6 @@
 I chose the in-class-clusteringGenes scattering matrix plot, as I remembered the caption of the plot: It's a mess! the data is too high dimensional for a regular visualization!
 
+***  DETAILED EXPLANATIONS ON THE PLOTS AND CODING ARE GIVEN IN THE NOOTEBOOK, BELOW EACH CELL****
 
 Original Plot:
 
