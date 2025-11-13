@@ -7,6 +7,47 @@ A pd.plotting.scatter_matrix displaying all pairwise relationships among 84 gene
 While comprehensive, it produced thousands of small, redundant plots that were impossible to interpret.
 ![Original scatterplot matrix showing gene expression data](https://github.com/elhamkashi/DSPS_EKashi/raw/main/HW9/original%20bad%20plot.png)
 
+# Evaluation of the Scatter Matrix
+
+**Overall Issue**
+Visual clutter dominates, preventing identification of meaningful gene correlations. The viewer focuses on repetitive design elements rather than data relationships.
+
+**Critical Failures**
+
+**1. Ambiguity & Distraction**
+
+    * No title and unreadable overlapping labels
+    * Too many tiny subplots (3,486 pairs for 84 genes)
+    * Impossible to interpret specific relationships
+    * Design noise overwhelms meaningful data patterns
+
+
+**2. Distortion & Lie Factor**
+
+    * All relationships appear equally noisy due to small plot sizes
+    * Cannot distinguish strong from weak correlations
+    * Visual representation doesn't scale with actual effect sizes
+    * Lie factor << 1: weak visual representation of true correlations
+
+
+**3. Poor Data-Ink Ratio**
+
+    * Excessive ink on gridlines and repeated axes
+    * Each gene pair shown twice (upper/lower triangle)
+    * Diagonal self-correlations add no information
+    * Data-ink ratio << 1: more decoration than data communication
+
+
+***Recommended Solution***
+
+Replace with a **correlation heatmap ** that:
+
+    * Uses color to directly represent Pearson correlation values
+    * Eliminates redundancy by masking one triangle
+    * Provides clear color scale and clustering
+    * Maximizes data-ink ratio by removing chart junk
+    * Makes correlation patterns immediately visible
+
 
 Final Plots:
 
@@ -17,7 +58,10 @@ Two complementary correlation visualizations:
 2-Masked correlation heatmap showing only the lower triangle to remove duplication.
 ![Masked correlation heatmap eliminating redundancy](https://github.com/elhamkashi/DSPS_EKashi/raw/main/HW9/Masked%20correlation%20matrix.png)
 
-Changes Made and Why:
+
+
+
+What Changes Made and Why:
 
 1. Replaced Scatterplot Matrix with Correlation Heatmaps
 
