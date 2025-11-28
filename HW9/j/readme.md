@@ -117,9 +117,11 @@ Tufte Principle: Eliminate chart junk to clarify meaning.
 
 This figure shows current experimental limits (solid lines), future projections (dashed lines), and theoretical regions for axions and axion-like particles as functions of their mass and photon coupling strength. It effectively compiles a large amount of data but struggles with visual clarity. The overlapping shaded regions, dense color palette, and angled experiment labels create ambiguity, making it difficult to distinguish between experiments or interpret the data without the caption. The logarithmic axes accurately represent the parameter space , so no numerical distortion. The figure’s visualization leads to high distraction — visual noise from redundant lines, text, and gradients draws attention away from the main message. Its data-to-ink ratio is low, with much of the visual space devoted to design elements rather than new information. Several Tufte principles are violated, especially no-chart-junk and data/ink >> 1, A clearer presentation could use simplified color schemes, consistent labeling, and multiple smaller panels (for current limits, projections, and theoretical regions separately). Overall, while the figure is data-rich, its visual complexity reduces interpretability and hides the most important insights. How to make it better: Splitting the information into multiple simpler plots (e.g., current vs. projected experiments) and use consistent, non-overlapping color coding. Reduce redundant labels and gradients so the viewer can clearly identify experimental sensitivities and theoretical regions without needing to rely on the caption.
 
-Improvement suggestions: ##1- Using flat fills — a single uniform color with slight transparency (alpha) instead of fading tones. Example( matplot): ax.fill_between(x, y1, y2, color='gold', alpha=0.15)
+# Improvement suggestions: 
+1- Using flat fills — a single uniform color with slight transparency (alpha) instead of fading tones. Example( matplot): ax.fill_between(x, y1, y2, color='gold', alpha=0.15)
 
-##2-Setting z-order: theory (1–2), projections (4), current (5). Example: *zorder=1 → theory region sits in the background *zorder=4 → projections are above theory *zorder=5 → current limits are drawn last and appear on top
+
+2-Setting z-order: theory (1–2), projections (4), current (5). Example: *zorder=1 → theory region sits in the background *zorder=4 → projections are above theory *zorder=5 → current limits are drawn last and appear on top
 
 As an improved example of this plot one can consider the following figure:
 
